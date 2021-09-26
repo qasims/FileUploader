@@ -13,21 +13,21 @@ namespace Chambers.PdfUploader
     public class FileUploaderService : IFileUploaderService
     {
         private const long maxPdfFileSize = 5242880;  //5MB
-        private readonly IDatabaseService _databaseService;
+        private readonly IDatabaseRepository _databaseRepository;
 
-        public FileUploaderService(IDatabaseService databaseService)
+        public FileUploaderService(IDatabaseRepository databaseService)
         {
-            _databaseService = databaseService ?? throw new ArgumentNullException(nameof(databaseService));
+            _databaseRepository = databaseService ?? throw new ArgumentNullException(nameof(databaseService));
         }
 
         public List<IFile> GetFiles(bool sortDescending)
         {
             if(sortDescending)
             {
-                return _databaseService.Get().OrderByDescending(o => o.Name).ToList();
+                return _databaseRepository.GetAll().OrderByDescending(o => o.Name).ToList();
             }
 
-            return _databaseService.Get().OrderBy(o => o.Name).ToList(); ;
+            return _databaseRepository.GetAll().OrderBy(o => o.Name).ToList(); ;
         }
 
         public List<IFile> AddFile(List<IFile> uploadedFiles)
@@ -36,7 +36,7 @@ namespace Chambers.PdfUploader
 
             foreach (var file in uploadedFiles)
             {
-                var uploadedFile = _databaseService.Add(file);
+                var uploadedFile = _databaseRepository.Add(file);
                 result.Add(uploadedFile);
             }
 
@@ -45,11 +45,11 @@ namespace Chambers.PdfUploader
 
         public bool DeleteFile(Guid Id)
         {
-            var isFileExists = _databaseService.Get(Id);
+            var isFileExists = _databaseRepository.Get(Id);
 
             if (isFileExists != null)
             {
-                _databaseService.Remove(isFileExists.Id);
+                _databaseRepository.Remove(isFileExists.Id);
                 return true;
             }
 

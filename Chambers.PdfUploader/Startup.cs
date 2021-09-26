@@ -44,7 +44,7 @@ namespace Chambers.PdfUploader
 
             services.AddTransient<IFile, PdfFile>();
             services.AddScoped<IFileUploaderService, FileUploaderService>();
-            services.AddTransient<IDatabaseService, DatabaseService>();
+            services.AddTransient<IDatabaseRepository, DatabaseRepository>();
 
 
             services.AddControllers();

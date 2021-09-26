@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Chambers.PdfUploader.Services
 {
-    public class DatabaseService : IDatabaseService
+    public class DatabaseRepository : IDatabaseRepository
     {
         private readonly IMongoCollection<IFile> _files;
 
         private readonly IMongoDatabase database;
 
-        public DatabaseService(IDatabaseStoreSettings settings)
+        public DatabaseRepository(IDatabaseStoreSettings settings)
         {
             if (settings is null)
             {
@@ -23,10 +23,9 @@ namespace Chambers.PdfUploader.Services
             var client = new MongoClient(settings.ConnectionString);
             database = client.GetDatabase(settings.DatabaseName);
             _files = database.GetCollection<IFile>(settings.FileCollectionName);
-
         }
 
-        public List<IFile> Get()
+        public List<IFile> GetAll()
         {
             return _files.Find(file => true).ToList();
         }

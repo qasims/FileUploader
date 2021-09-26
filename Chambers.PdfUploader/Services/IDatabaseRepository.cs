@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 namespace Chambers.PdfUploader.Services
 {
-    public interface IDatabaseService
+    public interface IDatabaseRepository
     {
         IFile Add(IFile pdfFile);
-        List<IFile> Get();
+        List<IFile> GetAll();
         IFile Get(Guid id);
         void Remove(IFile fileIn);
         void Remove(Guid id);
