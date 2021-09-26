@@ -80,7 +80,7 @@ namespace Chambers.PdfUploader.Controllers
                 return Ok("File deleted!");
             }
 
-            return NotFound("File you trying to delete not foud!");
+            return NotFound("File you trying to delete not found!");
         }
     }
 }
