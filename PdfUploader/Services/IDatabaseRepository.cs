@@ -1,8 +1,8 @@
-﻿using Chambers.PdfUploader.Models;
+﻿using PdfUploader.Models;
 using System;
 using System.Collections.Generic;
 
-namespace Chambers.PdfUploader.Services
+namespace PdfUploader.Services
 {
     public interface IDatabaseRepository
     {

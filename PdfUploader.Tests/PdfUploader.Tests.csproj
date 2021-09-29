@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Chambers.PdfUploader\Chambers.PdfUploader.csproj" />
+    <ProjectReference Include="..\PdfUploader\PdfUploader.csproj" />
   </ItemGroup>
 
 </Project>

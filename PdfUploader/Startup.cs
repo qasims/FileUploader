@@ -1,5 +1,5 @@
-using Chambers.PdfUploader.Models;
-using Chambers.PdfUploader.Services;
+using PdfUploader.Models;
+using PdfUploader.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -9,7 +9,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using MongoDB.Bson.Serialization;
 
-namespace Chambers.PdfUploader
+namespace PdfUploader
 {
     public class Startup
     {

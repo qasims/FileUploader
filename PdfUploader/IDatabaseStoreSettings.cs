@@ -1,6 +1,6 @@
-﻿namespace Chambers.PdfUploader
+﻿namespace PdfUploader
 {
-    public class DatabaseStoreSettings : IDatabaseStoreSettings
+    public interface IDatabaseStoreSettings
     {
         public string FileCollectionName { get; set; }
         public string ConnectionString { get; set; }
