@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Chambers.PdfUploader
+namespace PdfUploader
 {
     public class Program
     {

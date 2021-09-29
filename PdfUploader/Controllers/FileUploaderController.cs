@@ -1,4 +1,4 @@
-﻿using Chambers.PdfUploader.Models;
+﻿using PdfUploader.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Chambers.PdfUploader.Controllers
+namespace PdfUploader.Controllers
 {
     [Route("api/[controller]")]
     public class FileUploaderController : Controller

@@ -1,14 +1,13 @@
-﻿using Chambers.PdfUploader.Models;
-using Chambers.PdfUploader.Services;
+﻿using PdfUploader.Models;
+using PdfUploader.Services;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace Chambers.PdfUploader
+namespace PdfUploader
 {
     public class FileUploaderService : IFileUploaderService
     {

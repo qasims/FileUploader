@@ -1,12 +1,12 @@
-using Chambers.PdfUploader.Models;
-using Chambers.PdfUploader.Services;
+using PdfUploader.Models;
+using PdfUploader.Services;
 using Moq;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Chambers.PdfUploader.Tests
+namespace PdfUploader.Tests
 {
     public class FileUploaderServiceTests
     {

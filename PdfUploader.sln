@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chambers.PdfUploader", "Chambers.PdfUploader\Chambers.PdfUploader.csproj", "{5D9F246E-D93C-4152-BF6D-023E1339D33B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfUploader", "PdfUploader\PdfUploader.csproj", "{5D9F246E-D93C-4152-BF6D-023E1339D33B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chambers.PdfUploader.Tests", "Chambers.PdfUploader.Tests\Chambers.PdfUploader.Tests.csproj", "{2877B26D-C553-401E-9C0D-621B0CF0A1F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfUploader.Tests", "PdfUploader.Tests\PdfUploader.Tests.csproj", "{2877B26D-C553-401E-9C0D-621B0CF0A1F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

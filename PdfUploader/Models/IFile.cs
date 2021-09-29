@@ -2,7 +2,7 @@
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 
-namespace Chambers.PdfUploader.Models
+namespace PdfUploader.Models
 {
     public interface IFile
     {

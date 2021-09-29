@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Chambers.PdfUploader": {
+    "PdfUploader": {
       "commandName": "Project",
       "launchBrowser": true,
       //"launchUrl": "",
