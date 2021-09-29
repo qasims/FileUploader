@@ -1,6 +1,7 @@
 # FileUploader
-* Swagger is added so you can test project by Swagger UI.
-* MongoDb is used a test clust credential are provided in appsettings.json Note: I know credential should not be in config file must be in more secure. It is to just make it easy for you.
-* You can add local MongoDb configuration in appsettings if you want.
+* Install mongodb as instructions given https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+* Configure MongoDb configuration in appsettings
+* Swagger UI can be used for testing or PostMan https://www.postman.com/downloads/
+
 
 
